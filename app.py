@@ -41,7 +41,10 @@ def callback():
 def handle_message(event):
     msg = event.message.text
     s = '抱歉沒猜到hehe'
-    if msg == '和牛涮' or '屋馬':
+
+    if msg == '和牛涮':
+        s = '卡架！'
+    elif msg == '屋馬':
         s = '卡架！'
     elif msg == '河童':
         s = '想得美:P'
