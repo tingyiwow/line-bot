@@ -40,7 +40,14 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     msg = event.message.text
-    s = '哈囉嘻嘻'
+    s = '抱歉沒猜到hehe'
+    if msg == '和牛涮' or '屋馬':
+        s = '卡架！'
+    elif msg == '河童':
+        s = '想得美:P'
+    elif msg == '吃飽了':
+        s = '祝小然26歲生日快樂！'
+
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text=s)) # 回復使用者傳來的訊息
