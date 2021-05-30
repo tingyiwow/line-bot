@@ -39,9 +39,11 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
+    msg = event.message.text
+    s = 哈囉嘻嘻
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text=event.message.text)) # 回復使用者傳來的訊息
+        TextSendMessage(text=s)) # 回復使用者傳來的訊息
 
 
 if __name__ == "__main__": # 不希望import的時候就執行程式碼，確定檔案是被執行而不是被載入
