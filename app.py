@@ -43,9 +43,9 @@ def handle_message(event):
     s = '抱歉我看不懂hehe'
 
     if msg == '你好':
-        s = 'Hi! Kerorojj! May I have a day with you?  yes/no'
+        s = 'Hi! Kerorojj你好！! May I have the day with you?  yes/no'
     elif msg == 'yes':
-        s = 'Nothing more that I can choose <3 那你想吃什麼咧？選項有：和牛涮、屋馬、必勝客芝心披薩、河童'
+        s = 'Nothing more that I can choose <3! 那你想吃什麼咧？選項有：和牛涮、屋馬、必勝客芝心披薩、河童'
     elif msg == '和牛涮':
         s = '卡架！（吃飽後記得跟我說”吃飽了“呦）'
     elif msg == '屋馬':
