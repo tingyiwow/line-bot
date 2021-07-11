@@ -44,6 +44,8 @@ def handle_message(event):
 
     if msg == '你好':
         s = 'Hi! Kerorojj你好！! May I have the day with you?  yes/no'
+    elif msg == 'no':
+        s = ':)欠打嗎？'
     elif msg == 'yes':
         s = 'Nothing more that I can choose <3! 那你想吃什麼咧？選項有：和牛涮、屋馬、必勝客芝心披薩、河童'
     elif msg == '和牛涮':
@@ -65,9 +67,9 @@ def handle_message(event):
     elif msg == '開心':
         s = '那你今天幸福嗎？'
     elif msg == '幸福':
-        s = '庭亦也幸福～謝謝然ㄍ的陪伴！26生日快樂（好老）love you 3000'
+        s = '庭亦也幸福～26生日快樂！感謝所有一起共度的日子，希望你身體康健、天天快樂（、瘦身成功），love you 3000！'
     else:
-        s = ':)想被揍嗎？'
+        s = '看不懂啦:)想被揍嗎？'
 
 
     line_bot_api.reply_message(
